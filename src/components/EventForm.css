@@ -1,0 +1,39 @@
+.form-container {
+  position: absolute;
+  top: 180px;
+  left: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: gold;
+  width: 500px;
+  height: 290px;
+  padding: 15px 10px;
+}
+
+.new-event_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.new-event_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-event_actions {
+  display: flex;
+  justify-content: right;
+  height: 30px;
+}
+
+.new-event_actions button {
+  font-size: 16px;
+  height: 100%;
+  margin-left: 15px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
