@@ -10,25 +10,23 @@
   height: 200px;
 }
 
-.react-calendar {
-  width: 100%;
-  height: 500px;
+.add-new-event__container {
+  position: absolute;
+  top: 240px;
+  left: 310px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: greenyellow;
+  width: 500px;
+  height: 75px;
+  z-index: 1;
 }
 
-.react-calendar__navigation__label__labelText {
-  font-size: 1.1rem;
-}
-
-.react-calendar__month-view__days {
-  height: 410px;
-}
-
-.react-calendar__tile--now:enabled {
-  background: aliceblue;
-}
-
-button abbr {
-  font-size: 1.2rem;
+.add-new-event__container button {
+  font-size: 17px;
+  width: 140px;
+  height: 35px;
 }
 
 .event-indicator {
@@ -49,6 +47,15 @@ button abbr {
   width: 500px;
   height: 350px;
   padding: 8px;
+}
+
+.events-empty {
+  position: absolute;
+  top: 330px;
+  left: 310px;
+  background: goldenrod;
+  width: 500px;
+  height: 60px;
 }
 
 .event {
