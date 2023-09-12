@@ -33,7 +33,7 @@ const EventForm = (props) => {
         <div className='new-event_information'>
           <div className='new-event_input'>
             <label>Title</label>
-            <input type='text' value={enteredTitle} onChange={titleChangeHandler}/>
+            <input type='text' value={enteredTitle} onChange={titleChangeHandler} autoFocus/>
           </div>
           <div className='new-event_input'>
             <label>Notes</label>

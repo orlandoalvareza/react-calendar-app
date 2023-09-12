@@ -29,10 +29,15 @@
 
 button abbr {
   font-size: 1.2rem;
-  /* color: white;
-  background: black;
-  border: 1px solid blue;
-  border-radius: 30%; */
+}
+
+.event-indicator {
+  background-color: aqua;
+  width: 12px;
+  height: 12px;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 50%;
 }
 
 .events-container {
