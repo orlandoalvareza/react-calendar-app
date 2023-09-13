@@ -22,7 +22,6 @@ const EventForm = (props) => {
       notes: enteredNotes
     }
 
-    console.log(eventData);
     props.onSaveEvent(eventData);
     setEnteredTitle('');
     setEnteredNotes('');

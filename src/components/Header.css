@@ -18,27 +18,61 @@
   position: absolute;
   width: 180px;
   height: 180px;
+  background: cadetblue;
   border-radius: 50%;
+  padding: 3px;
+  margin-top: 10px; 
   z-index: 1;
 }
 
 .profile-information-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
   background-color: bisque;
-  width: 650px;
+  width: 30%;
   height: 100%;
+  padding: 15px 10px;
 }
 
-.other-profile-information {
-  padding: 0 15px;
+.profile-information {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-information__fields h3, .profile-information__data h3 {
+  padding: 2px;
+  margin-bottom: 5px;
+}
+
+.profile-information__fields h3 {
+  text-align: right;
+}
+
+.profile-information-container button {
+  width: 65%;
+  height: 25px;
 }
 
 .profile-name {
   position: absolute;
-  top: 132px;
+  top: 155px;
   background-color: cadetblue;
   width: 100%;
   text-align: center;
   padding: 5px 0 5px 100px;
+}
+
+.profile-information__form {
+  position: absolute;
+  top: 20px;
+  left: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: paleturquoise;
+  width: 500px;
+  height: 290px;
+  padding: 15px 10px;
 }
