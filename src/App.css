@@ -4,12 +4,6 @@
   height: 700px;
 }
 
-.header-container {
-  background: grey;
-  width: 100%;
-  height: 200px;
-}
-
 .add-new-event__container {
   position: absolute;
   top: 240px;

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Calendar from 'react-calendar';
 
 import EventForm from './components/EventForm';
+import Header from './components/Header';
 import 'react-calendar/dist/Calendar.css';
 import './Calendar.css';
 import './App.css';
@@ -74,11 +75,11 @@ function App() {
 
   return (
     <div className='app-container'>
-      <div className='header-container'></div>
+      <Header />
       <Calendar onClickDay={(date) => selectDateHandler(date)} tileContent={( date, view ) => hasEventsHandler(date, view)} />
       {isDateSelected && 
       <div className='add-new-event__container'>
-        <button onClick={cancelEventHandler}>Back</button>
+        <button onClick={cancelEventHandler}>Cancel</button>
         <button onClick={addEventHandler}>Add New Event</button>
       </div>}
       {isEditing && <EventForm onCancel={cancelEventHandler} onSaveEvent={onSaveDataHandler}/>}
