@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import HeaderForm from './HeaderForm';
-import image from '../images/Sarah-img.jpg';
+import image from '../../images/Sarah-img.jpg';
 import './Header.css';
 
 const initialUserInfo = {

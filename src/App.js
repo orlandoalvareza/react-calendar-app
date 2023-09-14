@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Calendar from 'react-calendar';
 
 import EventForm from './components/EventForm';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import 'react-calendar/dist/Calendar.css';
 import './Calendar.css';
 import './App.css';
