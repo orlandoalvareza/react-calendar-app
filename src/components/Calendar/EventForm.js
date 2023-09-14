@@ -41,7 +41,7 @@ const EventForm = (props) => {
         </div>
         <div className='new-event_actions'>
           <button type='button' onClick={props.onCancel}>Cancel</button>
-          <button type='submit'>Add Event</button>
+          <button type='submit'>Accept</button>
         </div>
       </form>
   )

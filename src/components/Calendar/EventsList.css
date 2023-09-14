@@ -1,0 +1,15 @@
+.events-container {
+  position: absolute;
+  top: 330px;
+  left: 310px;
+  gap: 10px;
+  background: salmon;
+  width: 500px;
+  height: 350px;
+  padding: 8px;
+}
+
+.event {
+  background: aliceblue;
+  height: 80px;
+}

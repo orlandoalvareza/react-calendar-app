@@ -18,3 +18,21 @@
 button abbr {
   font-size: 1.2rem;
 }
+
+.events-list-empty {
+  position: absolute;
+  top: 330px;
+  left: 310px;
+  background: goldenrod;
+  width: 500px;
+  height: 60px;
+}
+
+.event-indicator {
+  background-color: aqua;
+  width: 12px;
+  height: 12px;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 50%;
+}
