@@ -1,10 +1,10 @@
-import './EventsList.css';
+import classes from './EventsList.module.css';
 
 const EventsList = (props) => {
   return (
-    <div className='events-container'>
+    <div className={classes['events-container']}>
       {props.events.map((item) => (
-        <div className='event'  key={item.id}>
+        <div className={classes.event}  key={item.id}>
           <h3>{item.title}</h3>
           <p>{item.notes}</p>
         </div>

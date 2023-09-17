@@ -3,9 +3,9 @@ import Calendar from 'react-calendar';
 
 import DateSelected from './DateSelected';
 import EventForm from './EventForm';
+import EventsList from './EventsList';
 import 'react-calendar/dist/Calendar.css';
 import './CalendarBody.css';
-import EventsList from './EventsList';
 
 const eventsData = [];
 

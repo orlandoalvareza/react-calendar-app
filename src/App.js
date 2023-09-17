@@ -1,10 +1,10 @@
 import Header from './components/Header/Header';
 import CalendarBody from './components/Calendar/CalendarBody';
-import './App.css';
+import classes from './App.module.css';
 
 function App() {
   return (
-    <div className='app-container'>
+    <div className={classes['app-container']}>
       <Header/>
       <CalendarBody/>
     </div>
