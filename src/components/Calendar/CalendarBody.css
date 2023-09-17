@@ -20,9 +20,9 @@ button abbr {
 }
 
 .events-list-empty {
-  position: absolute;
+  /* position: absolute;
   top: 330px;
-  left: 310px;
+  left: 310px; */
   background: goldenrod;
   width: 500px;
   height: 60px;

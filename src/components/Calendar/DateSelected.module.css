@@ -1,7 +1,7 @@
 .add-new-event__container {
-  position: absolute;
+  /* position: absolute;
   top: 240px;
-  left: 310px;
+  left: 310px; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;

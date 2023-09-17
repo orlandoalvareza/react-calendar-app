@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 
+import Modal from '../UI/Modal';
 import DateSelected from './DateSelected';
 import EventForm from './EventForm';
 import EventsList from './EventsList';
@@ -64,9 +65,12 @@ const CalendarBody = () => {
   return (
     <div>
       <Calendar onClickDay={(date) => selectDateHandler(date)} tileContent={( date, view ) => hasEventsHandler(date, view)} />
-      {isDateSelected && <DateSelected onCancel={cancelEventHandler} addEvent={addEventHandler}/>}
+      {isDateSelected && 
+        <Modal>
+          {eventsList}
+          <DateSelected onCancel={cancelEventHandler} addEvent={addEventHandler}/>
+        </Modal>}
       {isEditing && <EventForm onCancel={cancelEventHandler} onSaveEvent={onSaveDataHandler}/>}
-      {(isDateSelected || isEditing) && eventsList}
     </div>
   )
 }
