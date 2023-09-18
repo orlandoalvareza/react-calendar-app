@@ -12,26 +12,12 @@
 .profile-information__form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 .profile-information__form label {
   font-size: 19px;
   font-weight: 500;
   color: #000;
-}
-
-.profile-information__form input {
-  font-size: 15px;
-  background-color: #BBBFCA;
-  height: 28px;
-  padding-left: 5px;
-  border: none;
-  border-radius: 2px;
-}
-
-.profile-information__form input:focus {
-  background-color: #F4F4F2;
 }
 
 .new-user-info, .new-user-info__section {
@@ -54,10 +40,8 @@
 
 .profile-information__actions button:nth-child(1):active {
   color: #EE2B47;
-  background-color: #BBBFCA;
 }
 
 .profile-information__actions button:nth-child(2):active {
   color: #5B9A8B;
-  background-color: #BBBFCA;
 }

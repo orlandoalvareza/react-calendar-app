@@ -12,8 +12,7 @@
   position: absolute;
   top: 32%;
   left: 520px;
-  /* background-color: white; */
-  /* padding: 5px; */
   z-index: 15;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
   /* transform: translate(50%, -50%); */
 }

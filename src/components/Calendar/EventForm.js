@@ -1,6 +1,7 @@
 import {useState} from "react";
 
 import Button from "../UI/Button";
+import Input from "../UI/Input";
 import classes from './EventForm.module.css';
 
 const EventForm = (props) => {
@@ -33,7 +34,7 @@ const EventForm = (props) => {
         <div className={classes['new-event_information']}>
           <div className={classes['new-event_input']}>
             <label>Title</label>
-            <input type='text' value={enteredTitle} onChange={titleChangeHandler} autoFocus/>
+            <Input type='text' value={enteredTitle} onChange={titleChangeHandler} autoFocus/>
           </div>
           <div className={classes['new-event_input']}>
             <label>Notes</label>

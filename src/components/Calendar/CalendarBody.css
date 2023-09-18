@@ -52,12 +52,14 @@ button abbr {
 }
 
 .events-list-empty {
-  font-size: 1.2rem;
-  background: goldenrod;
+  font-size: 1.3rem;
+  color:#000;
+  background-color: #6B728E;
   text-align: center;
   width: 500px;
   height: 180px;
   padding-top: 25px;
+  border-radius: 5px 5px 0 0;
 }
 
 .event-indicator {

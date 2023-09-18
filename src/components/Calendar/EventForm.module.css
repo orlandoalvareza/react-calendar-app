@@ -1,14 +1,12 @@
 .form-container {
-  /* position: absolute;
-  top: 20px;
-  left: 310px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: gold;
+  background-color: #6B728E;
   width: 500px;
-  height: 300px;
-  padding: 5px;
+  height: 330px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .new-event_information {
@@ -29,15 +27,17 @@
   margin-bottom: 3px;
 }
 
-.new-event_input input {
-  font-size: 20px;
-  height: 25px;
-  padding: 2px;
-}
-
 .new-event_input textarea {
   font-size: 17px;
-  padding: 4px;
+  background-color: #BBBFCA;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.new-event_input textarea:focus {
+  background-color: #F4F4F2;
 }
 
 .new-event_actions {
@@ -53,4 +53,12 @@
   margin-left: 12px;
   padding: 5px 8px;
   cursor: pointer;
+}
+
+.new-event_actions button:nth-child(1):active {
+  color: #EE2B47;
+}
+
+.new-event_actions button:nth-child(2):active {
+  color: #5B9A8B;
 }

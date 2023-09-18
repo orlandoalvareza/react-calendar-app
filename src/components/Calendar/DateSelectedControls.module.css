@@ -1,15 +1,13 @@
 .add-new-event__container {
-  /* position: absolute;
-  top: 240px;
-  left: 310px; */
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   gap: 12px;
-  padding: 5px;
-  background-color: greenyellow;
+  background-color: #6B728E;
   width: 500px;
   height: 60px;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
   z-index: 1;
 }
 
@@ -18,4 +16,12 @@
   width: 100px;
   height: 30px;
   cursor: pointer;
+}
+
+.add-new-event__container button:nth-child(1):active {
+  color: #EE2B47;
+}
+
+.add-new-event__container button:nth-child(2):active {
+  color: #5B9A8B;
 }
