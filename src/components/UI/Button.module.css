@@ -1,0 +1,16 @@
+.button {
+  font-size: 17px;
+  color: #BBBFCA;
+  background-color: #21273D;
+  width: 100px;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #21273D;
+  background-color: #BBBFCA;
+  border: 1px solid #21273D;
+}

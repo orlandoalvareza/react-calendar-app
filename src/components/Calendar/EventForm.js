@@ -1,5 +1,6 @@
 import {useState} from "react";
 
+import Button from "../UI/Button";
 import classes from './EventForm.module.css';
 
 const EventForm = (props) => {
@@ -40,8 +41,8 @@ const EventForm = (props) => {
           </div>
         </div>
         <div className={classes['new-event_actions']}>
-          <button type='button' onClick={props.onCancel}>Cancel</button>
-          <button type='submit'>Accept</button>
+          <Button type='button' onClick={props.onCancel}>Cancel</Button>
+          <Button type='submit'>Accept</Button>
         </div>
       </form>
   )

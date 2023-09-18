@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Modal from "../UI/Modal";
+import Button from "../UI/Button";
 import classes from './HeaderForm.module.css';
 
 const HeaderForm = (props) => {
@@ -68,8 +69,8 @@ const HeaderForm = (props) => {
           </div>
         </div>
         <div className={classes['profile-information__actions']}>
-          <button onClick={props.onCancel} type='cancel'>Cancel</button>
-          <button type='submit'>Update</button>
+          <Button onClick={props.onCancel} type='cancel'>Cancel</Button>
+          <Button type='submit'>Update</Button>
         </div>
       </form>
     </Modal>
