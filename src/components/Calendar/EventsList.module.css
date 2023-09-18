@@ -1,47 +1,53 @@
 .events-container {
-  background: salmon;
+  background-color: #6B728E;
   width: 500px;
-  height: 220px;
+  height: 258px;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 5px;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
 }
 
 .events-container::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 .events-container::-webkit-scrollbar-track {
-  background: rebeccapurple;
+  background: #474E68;
+  border-radius: 5px;
 }
 
 .events-container::-webkit-scrollbar-thumb {
-  background: mediumspringgreen; 
-  border-radius: 8px;
+  background: #BBBFCA; 
+  border-radius: 5px;
 }
 
 .event {
   background: aliceblue;
   height: 95px;
-  padding: 5px;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 2px;
   overflow-y: auto;
   overflow-x: hidden;
-  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .event::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 .event::-webkit-scrollbar-track {
-  background: rebeccapurple;
+  background: #474E68;
+  border-radius: 5px;
 }
 
 .event::-webkit-scrollbar-thumb {
-  background: mediumspringgreen; 
-  border-radius: 8px;
+  background: #BBBFCA; 
+  border-radius: 5px;
 }
 
 .event h3 {
   margin-bottom: 8px;
+  border-bottom:1px solid #2E79BA;
 }

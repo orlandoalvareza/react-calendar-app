@@ -5,7 +5,7 @@ import image from '../../images/Sarah-img.jpg';
 import classes from './Header.module.css';
 
 const initialUserInfo = {
-  name: 'Sarah Johson',
+  name: 'Sarah Johnson',
   age: 24,
   city: 'London',
   profession: 'Architect'
