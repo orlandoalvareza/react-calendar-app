@@ -1,4 +1,5 @@
 .profile-information__container {
+  font-family: 'Gill Sans MT', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
