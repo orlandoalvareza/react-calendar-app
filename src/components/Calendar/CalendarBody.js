@@ -8,7 +8,14 @@ import EventsList from './EventsList';
 import 'react-calendar/dist/Calendar.css';
 import './CalendarBody.css';
 
-const eventsData = [];
+const eventsData = [
+  {
+    id: 'n1',
+    title: 'Starting project',
+    notes: 'Using React js to create a calendar app',
+    date: "Sat Sep 09 2023"
+  }
+];
 
 const CalendarBody = () => {
   const [isDateSelected, setIsDateSelected] = useState(false);
