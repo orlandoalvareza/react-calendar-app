@@ -69,6 +69,11 @@
   cursor: pointer;
 }
 
+.profile-information-container button:hover {
+  color: #474E68;
+  background-color: #D8E9F0;
+}
+
 .profile-name {
   position: absolute;
   top: 155px;
