@@ -1,0 +1,50 @@
+.profile-information__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: gainsboro;
+  width: 500px;
+  height: 240px;
+  padding: 5px;
+}
+
+.profile-information__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-information__form label {
+  font-size: 19px;
+}
+
+.profile-information__form input {
+  font-size: 15px;
+  height: 28px;
+  padding-left: 5px;
+}
+
+.new-user-info, .new-user-info__section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-information__form > .new-user-info:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-information__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.profile-information__actions button {
+  font-size: 17px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}

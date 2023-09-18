@@ -51,8 +51,11 @@
 }
 
 .profile-information-container button {
+  font-size: 16px;
   width: 65%;
-  height: 25px;
+  height: 28px;
+  padding: 2px 0;
+  cursor: pointer;
 }
 
 .profile-name {

@@ -25,10 +25,10 @@ const Header = () => {
 
   const saveUserInfoHandler = (enteredData) => {
     setUserInfo({
-      name: (enteredData.name !== '' ? enteredData.name : initialUserInfo.name),
-      age: (enteredData.age !== '' ? enteredData.age : initialUserInfo.age),
-      city: (enteredData.city !== '' ? enteredData.city : initialUserInfo.city),
-      profession: (enteredData.profession !== '' ? enteredData.profession : initialUserInfo.profession)
+      name: enteredData.name || initialUserInfo.name,
+      age: enteredData.age !== 0 ? enteredData.age : initialUserInfo.age,
+      city: enteredData.city || initialUserInfo.city,
+      profession: enteredData.profession || initialUserInfo.profession
     });
     setIsEditingUserInfo(false);
   }
@@ -51,7 +51,7 @@ const Header = () => {
             <h3>{userInfo.profession}</h3>
           </div>
         </div>
-        <button onClick={startEditingUserInput}>Button</button>
+        <button onClick={startEditingUserInput}>Update Profile</button>
       </div>
       <h1 className={classes['profile-name']}>{userInfo.name}</h1>
       {isEditingUserInfo && <HeaderForm  onSaveUserInfo={saveUserInfoHandler} onCancel={stopEditingUserInput}/>}
