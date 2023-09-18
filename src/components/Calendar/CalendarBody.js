@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 
 import Modal from '../UI/Modal';
-import DateSelected from './DateSelected';
+import DateSelectedControls from './DateSelectedControls';
 import EventForm from './EventForm';
 import EventsList from './EventsList';
 import 'react-calendar/dist/Calendar.css';
@@ -58,19 +58,19 @@ const CalendarBody = () => {
     return eventsDays.some(event => event === date.toDateString());
   }
 
-  let eventsList = filteredEvents.length !== 0 ? 
-    <EventsList events={filteredEvents}/> :
-    <h3 className='events-list-empty'>No Found Events</h3>;
+  let dateEventsModal = 
+    <Modal>
+      {filteredEvents.length !== 0 ? <EventsList events={filteredEvents}/> : <h3 className='events-list-empty'>No Found Events</h3>}
+      <DateSelectedControls onCancel={cancelEventHandler} addEvent={addEventHandler}/>
+    </Modal>;
+
+  let eventFormModal = <Modal><EventForm onCancel={cancelEventHandler} onSaveEvent={onSaveDataHandler}/></Modal>;
 
   return (
     <div>
       <Calendar onClickDay={(date) => selectDateHandler(date)} tileContent={( date, view ) => hasEventsHandler(date, view)} />
-      {isDateSelected && 
-        <Modal>
-          {eventsList}
-          <DateSelected onCancel={cancelEventHandler} addEvent={addEventHandler}/>
-        </Modal>}
-      {isEditing && <EventForm onCancel={cancelEventHandler} onSaveEvent={onSaveDataHandler}/>}
+      {isDateSelected && dateEventsModal}
+      {isEditing && eventFormModal}
     </div>
   )
 }

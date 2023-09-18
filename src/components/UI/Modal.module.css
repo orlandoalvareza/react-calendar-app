@@ -10,10 +10,11 @@
 
 .modal {
   position: absolute;
-  top: 40%;
+  top: 32%;
   left: 500px;
   background-color: white;
-  padding: 1rem;
+  padding: 5px;
+  border-radius: 5px;
   z-index: 15;
   /* transform: translate(50%, -50%); */
 }

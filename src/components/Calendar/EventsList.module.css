@@ -1,15 +1,47 @@
 .events-container {
-  position: absolute;
-  top: 330px;
-  left: 310px;
-  gap: 10px;
   background: salmon;
   width: 500px;
-  height: 350px;
-  padding: 8px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+.events-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.events-container::-webkit-scrollbar-track {
+  background: rebeccapurple;
+}
+
+.events-container::-webkit-scrollbar-thumb {
+  background: mediumspringgreen; 
+  border-radius: 8px;
 }
 
 .event {
   background: aliceblue;
-  height: 80px;
+  height: 95px;
+  padding: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 10px;
+}
+
+.event::-webkit-scrollbar {
+  width: 10px;
+}
+
+.event::-webkit-scrollbar-track {
+  background: rebeccapurple;
+}
+
+.event::-webkit-scrollbar-thumb {
+  background: mediumspringgreen; 
+  border-radius: 8px;
+}
+
+.event h3 {
+  margin-bottom: 5px;
 }

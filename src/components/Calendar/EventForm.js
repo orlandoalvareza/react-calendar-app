@@ -36,7 +36,7 @@ const EventForm = (props) => {
           </div>
           <div className={classes['new-event_input']}>
             <label>Notes</label>
-            <textarea type='text' rows='8' value={enteredNotes} onChange={notesChangeHandler}/>
+            <textarea type='text' rows='7' value={enteredNotes} onChange={notesChangeHandler}/>
           </div>
         </div>
         <div className={classes['new-event_actions']}>

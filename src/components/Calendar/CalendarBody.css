@@ -23,9 +23,12 @@ button abbr {
   /* position: absolute;
   top: 330px;
   left: 310px; */
+  font-size: 1.2rem;
   background: goldenrod;
+  text-align: center;
   width: 500px;
-  height: 60px;
+  height: 180px;
+  padding-top: 25px;
 }
 
 .event-indicator {

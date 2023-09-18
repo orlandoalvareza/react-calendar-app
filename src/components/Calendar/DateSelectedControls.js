@@ -1,6 +1,6 @@
-import classes from'./DateSelected.module.css';
+import classes from'./DateSelectedControls.module.css';
 
-const DateSelected = (props) => {
+const DateSelectedControls = (props) => {
   return (
     <div className={classes['add-new-event__container']}>
       <button onClick={props.onCancel} type="button">Cancel</button>
@@ -9,4 +9,4 @@ const DateSelected = (props) => {
   )
 }
 
-export default DateSelected;
+export default DateSelectedControls;
