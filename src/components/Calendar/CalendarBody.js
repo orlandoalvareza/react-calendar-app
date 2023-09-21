@@ -28,7 +28,7 @@ const CalendarBody = () => {
     setIsDateSelected(true);
   }
 
-  const addEventHandler = (date) => {
+  const addEventHandler = () => {
     setIsDateSelected(false);
     setIsEditing(true);
   }
@@ -44,7 +44,7 @@ const CalendarBody = () => {
       id: Math.random().toString(),
       date: calendarDay.toDateString()
     }
-
+    
     setEvents(prevEvents => {
       return [eventData, ...prevEvents]
     })
@@ -68,9 +68,17 @@ const CalendarBody = () => {
     return eventsDays.some(event => event === date.toDateString());
   }
 
+  const deleteNoteHandler = (NoteId) => {
+    const filteredEventsById = events.filter(eventId => {
+      return eventId.id !== NoteId
+    })
+    
+    setEvents(filteredEventsById);
+  }
+
   let dateEventsModal = 
     <Modal>
-      {filteredEvents.length !== 0 ? <EventsList events={filteredEvents}/> : <h3 className='events-list-empty'>No Found Events</h3>}
+      {filteredEvents.length !== 0 ? <EventsList events={filteredEvents} onDelete={deleteNoteHandler}/> : <h3 className='events-list-empty'>No Found Events</h3>}
       <DateSelectedControls onCancel={cancelEventHandler} addEvent={addEventHandler}/>
     </Modal>;
 
