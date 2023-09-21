@@ -47,6 +47,17 @@
   background-color: whitesmoke;
 }
 
+.react-calendar__tile--active {
+  color: white;
+  background: transparent;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #21273D;
+  border: 1px solid #BBBFCA;
+}
+
 button abbr {
   font-size: 1.2rem;
 }

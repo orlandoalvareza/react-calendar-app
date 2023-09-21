@@ -23,8 +23,6 @@ const CalendarBody = () => {
   const [events, setEvents] = useState(eventsData);
   const [calendarDay, setCalendarDay] = useState(new Date());
 
-  let eventsDays = eventsData.map((eventDay) => eventDay.date);
-
   const selectDateHandler = (date) => {
     setCalendarDay(date);
     setIsDateSelected(true);
@@ -46,12 +44,15 @@ const CalendarBody = () => {
       id: Math.random().toString(),
       date: calendarDay.toDateString()
     }
-    setEvents(eventsData.push(eventData));
+
+    setEvents(prevEvents => {
+      return [eventData, ...prevEvents]
+    })
     setIsDateSelected(true);
     setIsEditing(false);
   }
 
-  const filteredEvents = eventsData.filter(element => {
+  const filteredEvents = events.filter(element => {
     return element.date === calendarDay.toDateString();
   });
 
@@ -61,7 +62,9 @@ const CalendarBody = () => {
     }
   };
 
-  function checkEventsDate(date) {
+  const checkEventsDate = (date) => {
+    const eventsDays = events.map((eventDay) => eventDay.date);
+
     return eventsDays.some(event => event === date.toDateString());
   }
 

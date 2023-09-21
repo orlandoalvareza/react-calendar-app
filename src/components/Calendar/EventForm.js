@@ -7,7 +7,7 @@ import classes from './EventForm.module.css';
 const EventForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredNotes, setEnteredNotes] = useState('');
-
+  
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
   }
