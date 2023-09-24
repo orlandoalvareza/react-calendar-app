@@ -16,6 +16,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #6B728E;
+  background: #6A759B;
 }
 
+/* @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    background: darksalmon;
+  }
+} */
