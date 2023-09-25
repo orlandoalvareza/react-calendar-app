@@ -52,20 +52,42 @@ const HeaderForm = (props) => {
         <div className={classes['profile-information__form']}>
           <div className={classes['new-user-info']}>
             <label>User Name</label>
-            <Input onChange={(event) => inputHandler('name', event.target.value)} value={userName} type='text' id='name' />
+            <Input 
+              onChange={(event) => inputHandler('name', event.target.value)} 
+              value={userName} 
+              type='text' 
+              id='name' 
+            />
           </div>
           <div className={classes['new-user-info']}>
             <div className={classes['new-user-info__section']}>
               <label>Age</label>
-              <Input onChange={(event) => inputHandler('age', event.target.value)} value={userAge} type='number' id='age' min='17' max='120' />
+              <Input 
+                onChange={(event) => inputHandler('age', event.target.value)} 
+                value={userAge} 
+                type='number' 
+                id='age' 
+                min='18' 
+                max='120' 
+              />
             </div>
             <div className={classes['new-user-info__section']}>
               <label>City</label>
-              <Input onChange={(event) => inputHandler('city', event.target.value)} value={userCity} type='text' id='city' />
+              <Input 
+                onChange={(event) => inputHandler('city', event.target.value)} 
+                value={userCity} 
+                type='text' 
+                id='city' 
+              />
             </div>
             <div className={classes['new-user-info']}>
               <label>Profession</label>
-              <Input onChange={(event) => inputHandler('profession', event.target.value)} value={userProfession} type='text' id='profession' />
+              <Input 
+                onChange={(event) => inputHandler('profession', event.target.value)} 
+                value={userProfession} 
+                type='text' 
+                id='profession' 
+              />
             </div>
           </div>
         </div>

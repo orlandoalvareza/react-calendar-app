@@ -57,3 +57,15 @@
   margin-bottom: 8px;
   border-bottom:1px solid #2E79BA;
 }
+
+@media screen and (max-width: 480px) {
+  .events-container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .events-container {
+    width: 350px;
+  }
+}

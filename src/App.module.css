@@ -4,3 +4,29 @@
   height: 700px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
+
+@media screen and (max-width: 480px) {
+  .app-container {
+    width: 400px;
+    height: 670px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .app-container {
+    width: 450px;
+    height: 670px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .app-container {
+    width: 740px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .app-container {
+    width: 1000px;
+  }
+}

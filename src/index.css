@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  /* outline: 1px solid red; */
 }
 
 html {
@@ -18,9 +17,3 @@ body {
   align-items: center;
   background: #6A759B;
 }
-
-/* @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  body {
-    background: darksalmon;
-  }
-} */

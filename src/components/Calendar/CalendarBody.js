@@ -78,15 +78,23 @@ const CalendarBody = () => {
 
   let dateEventsModal = 
     <Modal>
-      {filteredEvents.length !== 0 ? <EventsList events={filteredEvents} onDelete={deleteNoteHandler}/> : <h3 className='events-list-empty'>No Found Events</h3>}
+      {filteredEvents.length !== 0 
+        ? <EventsList events={filteredEvents} onDelete={deleteNoteHandler}/> 
+        : <h3 className='events-list-empty'>No Found Events</h3>}
       <DateSelectedControls onCancel={cancelEventHandler} addEvent={addEventHandler}/>
     </Modal>;
 
-  let eventFormModal = <Modal><EventForm onCancel={cancelEventHandler} onSaveEvent={onSaveDataHandler}/></Modal>;
+  let eventFormModal = 
+    <Modal>
+      <EventForm onCancel={cancelEventHandler} onSaveEvent={onSaveDataHandler}/>
+    </Modal>;
 
   return (
     <div>
-      <Calendar onClickDay={(date) => selectDateHandler(date)} tileContent={( date, view ) => hasEventsHandler(date, view)} />
+      <Calendar 
+        onClickDay={(date) => selectDateHandler(date)} 
+        tileContent={( date, view ) => hasEventsHandler(date, view)} 
+      />
       {isDateSelected && dateEventsModal}
       {isEditing && eventFormModal}
     </div>

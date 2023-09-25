@@ -46,3 +46,15 @@
 .profile-information__actions button:nth-child(2):active {
   color: #5B9A8B;
 }
+
+@media screen and (max-width: 480px) {
+  .profile-information__container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .profile-information__container {
+    width: 350px;
+  }
+}

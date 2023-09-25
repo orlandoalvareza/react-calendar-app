@@ -25,3 +25,29 @@
 .add-new-event__container button:nth-child(2):active {
   color: #5B9A8B;
 }
+
+@media screen and (max-width: 480px) {
+  .add-new-event__container {
+    width: 320px;
+    height: 50px;
+  }
+
+  .add-new-event__container button {
+    font-size: 15px;
+    width: 90px;
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .add-new-event__container {
+    width: 350px;
+    height: 50px;
+  }
+
+  .add-new-event__container button {
+    font-size: 15px;
+    width: 90px;
+    height: 28px;
+  }
+}

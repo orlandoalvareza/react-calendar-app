@@ -81,3 +81,27 @@ button abbr {
   margin-top: 5px;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 480px) {
+  .events-list-empty {
+    font-size: 1.1rem;
+    width: 320px;
+  }
+
+  .event-indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .events-list-empty {
+    font-size: 1.2rem;
+    width: 350px;
+  }
+
+  .event-indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
