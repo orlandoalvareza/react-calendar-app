@@ -15,18 +15,25 @@ A simple and customizable calendar app built with React.
 
   ```bash
   git clone https://github.com/orlandoalvareza/react-calendar-app
+  ```bash
 
 2. Navigate to the project directory:
 
+   ```bash
   cd react-calendar-app
+   ```bash
 
 3. Install the dependencies:
 
+   ```bash
   npm install
+   ```bash
 
 4. Start the development server:
-   
+
+   ```bash
   npm start
+   ```bash
 
 5. Open your web browser and visit http://localhost:3000 to use the app locally.
 
