@@ -19,21 +19,21 @@ A simple and customizable calendar app built with React.
 
 2. Navigate to the project directory:
 
-   ```bash
+  ```bash
   cd react-calendar-app
-   ```
+  ```
 
 3. Install the dependencies:
 
-   ```bash
+  ```bash
   npm install
-   ```
+  ```
 
 4. Start the development server:
 
-   ```bash
+  ```bash
   npm start
-   ```
+  ```
 
 5. Open your web browser and visit http://localhost:3000 to use the app locally.
 
